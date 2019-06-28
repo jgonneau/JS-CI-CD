@@ -15,5 +15,5 @@ script:
   - node_modules/.bin/jshint src
   - node_modules/.bin/retire
 
-after_script:
-  - ls && git branch
+after_script: 
+  - "git branch | grep * | cut -d ' ' -f2"
