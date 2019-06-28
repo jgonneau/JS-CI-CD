@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - "7"
+
+cache:
+  directories:
+    - $HOME/node_modules
+
+before_install: true
+
+install:
+- npm install
+
+before_script: true
+
+script: true
+
+after_script: true
