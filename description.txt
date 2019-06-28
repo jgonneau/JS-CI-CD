@@ -1,0 +1,1 @@
+La solution serait d'utiliser une webhook d'Heroku pour permettre de bloquer un pull request vers la master

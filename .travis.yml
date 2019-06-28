@@ -17,3 +17,9 @@ script:
 
 after_script: 
   - "git branch | grep * | cut -d ' ' -f2"
+
+deploy:
+    provider: heroku
+    api_key:
+        secure: <api_key>
+    app: testjs-ci-cd
