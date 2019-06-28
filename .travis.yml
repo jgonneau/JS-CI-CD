@@ -9,7 +9,7 @@ cache:
 before_install: true
 
 install:
-- npm install
+- docker run --rm -it node npm install
 
 before_script: true
 
