@@ -17,4 +17,3 @@ script:
   - node_modules/.bin/jshint src
   - node_modules/.bin/jshint retire
 
-after_script: true
