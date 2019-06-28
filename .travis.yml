@@ -6,7 +6,9 @@ cache:
   directories:
     - $HOME/node_modules
 
-before_install: true
+before_install:
+   - apt-get update
+   - apt-get install -y git
 
 install:
 - npm install
@@ -17,3 +19,5 @@ script:
   - node_modules/.bin/jshint src
   - node_modules/.bin/jshint retire
 
+after_script:
+  - ls && git branch
